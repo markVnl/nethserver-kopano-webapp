@@ -7,8 +7,8 @@ URL: %{url_prefix}/%{name}
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
-# HACK to switch between nethserver-kopano pam/ldap packages
-#Requires: nethserver-kopano
+
+Requires: nethserver-kopano
 Requires: nethserver-httpd
 Requires: kopano-webapp
 
