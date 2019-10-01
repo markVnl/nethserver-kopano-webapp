@@ -1,6 +1,6 @@
 Summary: NethServer configuration for Kopano WebApp
 Name: nethserver-kopano-webapp
-Version: 0.0.1
+Version: 0.0.2
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -11,6 +11,7 @@ BuildArch: noarch
 Requires: nethserver-kopano
 Requires: nethserver-httpd
 Requires: kopano-webapp
+Requires: nethserver-rh-php71-php-fpm
 
 BuildRequires: nethserver-devtools
 
