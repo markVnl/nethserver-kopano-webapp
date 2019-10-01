@@ -1,6 +1,6 @@
 Summary: NethServer configuration for Kopano WebApp
 Name: nethserver-kopano-webapp
-Version: 0.0.3
+Version: 0.0.4
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -10,8 +10,8 @@ BuildArch: noarch
 
 Requires: nethserver-kopano
 Requires: nethserver-httpd
-Requires: kopano-webapp
-Requires: nethserver-rh-php72-php-fpm
+Requires: kopano-webapp > 3.6.0
+Requires: nethserver-rh-php73-php-fpm
 
 BuildRequires: nethserver-devtools
 
@@ -35,6 +35,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Mon Jan 11 2021 Mark Verlinde <mark.verlinde@gmail.com>
+- move to rh-php73-php-fpm
+
 * Tue Oct 01 2019 Mark Verlinde <mark.verlinde@gmail.com>
 - move to rh-php72-php-fpm
 
